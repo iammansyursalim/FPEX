@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="346" height="162" viewBox="0 0 346 162">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#Path_5973);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.145" y1="0.5" x2="0.879" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a1d95f"/>
+      <stop offset="1" stop-color="#86ff00"/>
+    </linearGradient>
+    <filter id="Path_5973" x="0" y="0" width="346" height="162" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#3284e5" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Path_5973-2" data-name="Path 5973" class="cls-1" d="M16,0H282a16,16,0,0,1,16,16V98a16,16,0,0,1-16,16H16A16,16,0,0,1,0,98V16A16,16,0,0,1,16,0Z" transform="translate(24 19)"/>
+  </g>
+</svg>

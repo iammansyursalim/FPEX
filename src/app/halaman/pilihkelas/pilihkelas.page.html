@@ -1,0 +1,17 @@
+<ion-header xmlns="http://www.w3.org/1999/html">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Kelas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let dosen of dosen | async" [routerLink]="['/pilihminggu']" rcRandomColor [bgColor]="['#0FADF9','#FD7A77','#FF7D49',
+  '#8A4198','#92C755','#FBCC38','#285BD4','#F24F8A','#79E8E2']">
+    <ion-card-header style="color: white; font-size: medium;">{{dosen.matkul}}</ion-card-header>
+    <ion-card-content>
+      <img class="dosen" [src]="dosen.image">
+      <p>{{dosen.kelas}}</p>
+    </ion-card-content>
+    <ion-card-content style="color: white; font-size: 14px;">{{dosen.nama}}</ion-card-content>
+  </ion-card>
+</ion-content>

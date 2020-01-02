@@ -1,0 +1,52 @@
+<ion-content>
+  <ion-toolbar color="primary" style="height: 250px; position: absolute;z-index: auto;"></ion-toolbar>
+  <ul class="list-group list-group-horizontal" style="margin-top: 40px;">
+    <li class="list-group-item">3.53<p>IPK</p></li>
+    <li class="list-group-item">AKTIF<p>Status</p></li>
+    <li class="list-group-item">110<p>SKS</p></li>
+  </ul>
+  <ion-text color="light" class="atastextslide">
+    Jadwal Hari Ini
+  </ion-text>
+  <ion-slides pager="true" [options]="slidesConfig">
+    <ion-slide>
+      <ion-card class="slide" style="background-color: #FBCC38;">
+        <ion-card-header>
+          <ion-card-title style="font-size: medium; text-align: center;">Perancangan Antarmuka Pengguna</ion-card-title>
+          <ion-card-title style="font-size: medium; text-align: center;">16.00 - 17.50 / Ruang 4.1.5.55</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="slide" style="background-color: #79E8E2;">
+        <ion-card-header>
+          <ion-card-title style="font-size: medium; text-align: center;">Multimedia Online</ion-card-title>
+          <ion-card-title style="font-size: medium; text-align: center;">14.00 - 16.00 / Ruang 4.1.5.57</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="slide" style="background-color: #A1D95F;">
+        <ion-card-header>
+          <ion-card-title style="font-size: medium; text-align: center;">Rekayasa Perangkat Lunak</ion-card-title>
+          <ion-card-title style="font-size: medium; text-align: center;">16.00 - 17.50 / Ruang 4.1.5.65</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="slide" style="background-color:#E4598B;">
+        <ion-card-header>
+          <ion-card-title style="font-size: medium; text-align: center;">Analisis Desain Sistem Informasi</ion-card-title>
+          <ion-card-title style="font-size: medium; text-align: center;">12.30 - 14.10 / Ruang 4.1.8.82</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button [routerLink]="['/pilihkelas']">
+      <ion-icon name="qr-scanner"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+

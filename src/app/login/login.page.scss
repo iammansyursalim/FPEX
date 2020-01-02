@@ -1,0 +1,94 @@
+ion-content {
+  --offset-top: 0px;
+  --offset-bottom: 0px;
+  --background: #242A34;
+  --color: #FFF;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px 0;
+    .header {
+      flex: 1;
+      justify-content: center;
+      text-align: center;
+      padding-top: 20px;
+      .title {
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+      h3 {
+        color: #06bebd;
+      }
+    }
+    .body {
+      flex: 1.5;
+      ion-list {
+        --background: none;
+        background: none;
+        margin-bottom: 0!important;
+
+        ion-item {
+          --border-color: transparent!important;
+          --highlight-height: 0;
+          --background: none;
+          background: rgba(255,255,255,0.1);
+          border-radius: 4px;
+          margin-bottom: 10px;
+          ion-icon {
+            color: #FAFAFA;
+          }
+          ion-input {
+            --color: #FFF;
+          }
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      a {
+        color: #06bebd;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+app-login {
+
+}
+
+$white-color: #fff;
+$height100: 100%;
+
+ion-grid {
+  width:100%;
+  height: $height100;
+  background: #dfdfdf;
+}
+
+ion-row {
+  height: $height100;
+}
+
+ion-col {
+  border: 1px solid #488aff;
+  background: $white-color;
+}
+
+ion-button {
+  font-weight: 300;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  ion-grid {
+    background: $white-color;
+  }
+  ion-col {
+    border: none;
+  }
+}

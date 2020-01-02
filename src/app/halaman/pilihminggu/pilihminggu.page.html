@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center">PRESENSI</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let minggu of minggu | async" style="background-color: #0FADF9;" (click)="goToQrScan()">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="minggu.list">
+      </ion-avatar>
+      <ion-label style="text-align: center;font-size: larger">{{minggu.mingguke}}</ion-label>
+      <ion-thumbnail slot="end">
+        <img src="../../../assets/gambar/qr.png">
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="profile">
+  <ion-card no-margin>
+    <ion-card-content class="bg-profile">
+      <img src="https://image.flaticon.com/icons/png/512/149/149071.png">
+      <h1 class="fw500">Tedy Firdaus</h1>
+      <h2 color="light" margin-bottom>Mahasiswa</h2>
+      <ion-button icon-left color="secondary">
+        <ion-icon name="photos"></ion-icon>
+        Edit / Add Avatar
+      </ion-button>
+    </ion-card-content>
+
+    <ion-grid fixed no-padding>
+      <ion-row>
+        <ion-col size="12" padding>
+
+          <ion-list margin-bottom>
+            <ion-list-header color="dark">
+              <ion-label class="fw700">Form</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">Full Name:</ion-label>
+              <ion-input inputmode="text" placeholder="NIM dan Nama" value="1700016075 Tedy Firdaus"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">Email:</ion-label>
+              <ion-input inputmode="email" placeholder="Your UAD Email" value="tedy1700016075@webmail.uad.ac.id"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">Alamat:</ion-label>
+              <ion-input inputmode="text" placeholder="Kos Putra Bu is"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark">Kabupaten</ion-label>
+              <ion-select>
+                <ion-select-option value="nes">Bantul</ion-select-option>
+                <ion-select-option value="n64">Kulon Progo</ion-select-option>
+                <ion-select-option value="ps">Sleman</ion-select-option>
+                <ion-select-option value="genesis">Gunung Kidul</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark">Jalan</ion-label>
+              <ion-select>
+                <ion-select-option value="nes">Tamanan</ion-select-option>
+                <ion-select-option value="n64">Adi Sucipto</ion-select-option>
+                <ion-select-option value="ps">Malioboro</ion-select-option>
+                <ion-select-option value="genesis">Alun Alun</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+
+          <ion-list>
+            <ion-radio-group>
+              <ion-list-header color="dark">
+                <ion-label class="fw700">User Type</ion-label>
+              </ion-list-header>
+
+              <ion-item>
+                <ion-label color="primary">Mahasiswa</ion-label>
+                <ion-radio slot="start" value="Mahasiswa" checked></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label color="primary">Dosen</ion-label>
+                <ion-radio slot="start" value="Dosen"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+
+            <ion-item>
+              <ion-label class="text-1x">Pastikan Semua Benar</ion-label>
+              <ion-checkbox></ion-checkbox>
+            </ion-item>
+          </ion-list>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button size="large" expand="full" color="dark" (click)="sendData()" no-margin>Edit</ion-button>
+  </ion-card>
+
+  <div padding>
+    <ion-text color="dark" no-margin>
+      Pengeditan hanya bisa dilakukan 1 kali persemester
+    </ion-text>
+  </div>
+</ion-content>
